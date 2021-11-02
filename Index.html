@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="/thanks.html" name="contact" method="POST" data-netlify="true">
+    <form action="/thanks.html" name="contact" method="POST" data-netlify="true"  class="free_message_v1">
         <label for="name">First Name</label>
         <input type="text" name="name" id="name" placeholder="Paul" />
         <label for="age">Age</label>
         <input type="number" name="age" id="age" min="0" max="130" placeholder="45"/>
         <button type="submit">Submit</button>
     </form>
+    <form>
+        <textarea type="text" name="message" class="free_message"></textarea>
+    </form>
+    <form>
+        <select name="city"  class="free_message_v2">
+            <option>Copenhagen</option>
+            <option>Århus</option>
+            <option>Odense</option>
+        </select>
+    </form>
+        
+
+    
     <script src="script.js"></script>
 </body>
 </html>
